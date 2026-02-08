@@ -19,10 +19,11 @@ public class MovieCRUD {
 
                 System.out.println("\n===== MOVIE WATCH LIST =====");
                 System.out.println("1. Insert Movie");
-                System.out.println("2. View Movies");
+                System.out.println("2. Total Views Movie ");
                 System.out.println("3. Update Movie");
                 System.out.println("4. Delete Movie");
-                System.out.println("5. Exit");
+                System.out.println("5. particluar view a movie ");
+                System.out.println("6. Exit");
                 System.out.print("Choose option: ");
 
                 int choice = sc.nextInt();
@@ -46,6 +47,10 @@ public class MovieCRUD {
                         break;
 
                     case 5:
+                        particularmovie();
+                        break;
+
+                    case 6:
                         System.out.println("Thank You 😊");
                         System.exit(0);
 
@@ -193,4 +198,23 @@ public class MovieCRUD {
             e.printStackTrace();
         }
     }
-}
+    public static void particularmovie(){
+        try{
+          Connection con=DriverManager.getConnection(URL,USER,PASS);
+          CallableStatement cs=con.prepareCall("{call getmovie(?)}");
+          System.out.println("Enter the serial no:");
+          int id=sc.nextInt();
+          cs.setInt(1,id);
+          ResultSet rs=cs.executeQuery();
+          while (rs.next()) {
+            System.out.println(rs.getInt(1)+" "+rs.getString(2)+" "+rs.getString(3)+" "+rs.getBigDecimal(4)+" "+rs.getString(5));
+            
+          }
+          con.close();
+        }
+        catch(Exception e){
+           e.getStackTrace();
+        }
+        }
+
+    }
