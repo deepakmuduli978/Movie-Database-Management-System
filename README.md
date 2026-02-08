@@ -38,20 +38,23 @@ The main objective of this project is:
 ## ✨ Features
 
 ✔ Insert new movie records  
-![Program Output](screenshots/insert.png)
+![Insert Data](screenshots/insert.png)
 
 ✔ Display all movies  
 ![Program Output](screenshots/view table.png)
 
 ✔ Update movie details  
-![Program Output](screenshots/update.png)
+![Upddate row](screenshots/update.png)
 
 ✔ Delete movies  
-![Program Output](screenshots/delete&view.png)
+![Delete row](screenshots/delete&view.png)
 
 ✔ Menu-driven interface
 ![Program Output](screenshots/menu.png)
 
+✔Particular Movie Details
+![View a particular movie](screenshots/partuculardetails.png)
+ 
 ✔ MySQL database storage  
 ![Program Output](screenshots/mysql.png)
 
