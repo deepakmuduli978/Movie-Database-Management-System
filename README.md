@@ -4,7 +4,92 @@ This project is purly based on CRUD operation using java and mysql database. Whe
 =======
 ## Getting Started
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Welcome to the VS Code Java world. Her# 🎬 Movie Watch List Management System  
+### (Module 4 - JDBC Project)
+
+This is a Java-based console application developed using JDBC and MySQL.  
+It allows users to manage a movie watch list by performing CRUD operations.
+
+This project is created as part of Module 4 (M4) in Advance Java.
+
+---
+
+## 📌 Project Objective
+
+The main objective of this project is:
+
+- To understand JDBC connectivity
+- To perform database operations using Java
+- To learn CRUD functionality
+- To store and manage movie data efficiently
+
+---
+
+## 🛠️ Technologies Used
+
+- Java (JDK 8+)
+- JDBC
+- MySQL Database
+- VS Code / Eclipse
+- Windows OS
+
+---
+
+## ✨ Features
+
+✔ Insert new movie records  
+![Program Output](screenshots/insert.png)
+
+✔ Display all movies  
+![Program Output](screenshots/view table.png)
+
+✔ Update movie details  
+![Program Output](screenshots/update.png)
+
+✔ Delete movies  
+![Program Output](screenshots/delete&view.png)
+
+✔ Menu-driven interface
+![Program Output](screenshots/menu.png)
+
+✔ MySQL database storage  
+![Program Output](screenshots/mysql.png)
+
+---
+
+## 📂 Database Details
+
+### Database Name: `project`
+
+### Table Name: `watch_list`
+
+| Column | Type         | Description          |
+|--------|--------------|----------------------|
+| sl     | INT (PK)     | Serial Number        |
+| name   | VARCHAR(100) | Movie Name           |
+| genre  | VARCHAR(100) | Movie Genre          |
+| rating | DOUBLE       | Movie Rating         |
+| status | VARCHAR(50)  | Watched / Not Watched|
+
+---
+
+## ⚙️ Database Creation
+
+Run the following SQL commands:
+
+```sql
+CREATE DATABASE project;
+
+USE project;
+
+CREATE TABLE watch_list (
+    sl INT PRIMARY KEY,
+    name VARCHAR(100),
+    genre VARCHAR(100),
+    rating DOUBLE,
+    status VARCHAR(50)
+);
+e is a guideline to help you get started to write Java code in Visual Studio Code.
 
 ## Folder Structure
 
