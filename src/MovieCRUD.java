@@ -19,10 +19,10 @@ public class MovieCRUD {
 
                 System.out.println("\n===== MOVIE WATCH LIST =====");
                 System.out.println("1. Insert Movie");
-                System.out.println("2. Total Views Movie ");
+                System.out.println("2. Views all Movie ");
                 System.out.println("3. Update Movie");
                 System.out.println("4. Delete Movie");
-                System.out.println("5. particluar view a movie ");
+                System.out.println("5. View particluar  a movie ");
                 System.out.println("6. Exit");
                 System.out.print("Choose option: ");
 
